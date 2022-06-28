@@ -10,7 +10,7 @@ import re.hugobaret.workshopmod.item.WorkshopItems;
 @Mod.EventBusSubscriber(modid = WorkshopMod.MODID)
 public class RegistryHandler {
     @SubscribeEvent
-    public void registerItems(RegistryEvent.Register<Item> event) {
+    public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(WorkshopItems.LIST.toArray(new Item[0]));
     }
 }
